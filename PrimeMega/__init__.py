@@ -128,7 +128,7 @@ if ENV:
     ARQ_API_URL = os.environ.get("ARQ_API_URL", None)
     ARQ_API_KEY = os.environ.get("ARQ_API_KEY", None)
     ERROR_LOGS = os.environ.get("ERROR_LOGS", None)
-    PHOTO = os.environ.get("PHOTO", "https://telegra.ph/file/efc27dec817626cc95016.jpg")
+    PHOTO = os.environ.get("PHOTO", "https://telegra.ph/file/c372494ff25da59ce6fd9.jpg")
 
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
 
