@@ -28,7 +28,7 @@ async def _(event):
 
             async for asupan in ubot2.iter_messages(
 
-            "@Database_TonicUbot", filter=InputMessagesFilterVideo
+            "@WikiModeAsupan", filter=InputMessagesFilterVideo
 
             )
 
@@ -53,3 +53,43 @@ async def _(event):
     except Exception:
 
         await memeks.edit("Asupannya gaada komsol")
+
+@register(pattern="^/desahcewe ?(.*)")
+
+async def _(event):
+
+    memeks = await event.reply("**Mencari Asupan Desah...🔍**") 
+
+    try:
+
+        asupannya = [
+
+            asupan
+
+            async for asupan in ubot2.iter_messages(
+
+            "@desahancewesangesange", filter=InputMessagesFilterVideo
+
+            )
+
+        ]
+
+        kontols = random.choice(desahnya)
+
+        pantek = await ubot2.download_media(kontols)
+
+        await tbot.send_file(
+
+            event.chat.id, 
+
+            caption="Nih Desahnya nya Kak 🥵", 
+
+            file=pantek
+
+            )
+
+        await memeks.delete()
+
+    except Exception:
+
+        await memeks.edit("Desahannya gaada komsol")
