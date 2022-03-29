@@ -85,31 +85,36 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
+✪ Saya Adalah Bot Music+Manager.
+✪ Bot Music, Bisa Memutar Music dan Streaming Di Obrolan Suara Group.
+✪ Bot Manager, Memperindah Tampilan Group atau Hanya Berbuat Beramin-main
 ────────────────────────
-I'm a powerful group management bot built to help you manage your group!
-────────────────────
-Hit the /help or tap on button to se available command on me.
+× *Uptime:* `{}`
+× `{}` *users, across* `{}` *chats.*
+────────────────────────
+✪ Klik /help untuk melihat perintah saya yang tersedia.
 """
 
 buttons = [
-        [
-        InlineKeyboardButton(
-            text=f"➕️ Add {BOT_NAME} to your group ➕️", url=f"t.me/{BOT_USERNAME}?startgroup=true"
-        ),
+    [
+        InlineKeyboardButton(text="My Boss", url="https://t.me/terserah_wiki"),
     ],
     [
-        InlineKeyboardButton(text="Support", url=f"https://t.me/{SUPPORT_CHAT}"
+        InlineKeyboardButton(text="Get Help", callback_data="help_back"
         ),
         InlineKeyboardButton(
             text="TryInline", switch_inline_query_current_chat=""
         ),
+        InlineKeyboardButton(text="Music Help", callback_data="Wiki_music"),
     ],
     [
-        InlineKeyboardButton(text="Help & Commands❔", callback_data="help_back"
+        InlineKeyboardButton(
+            text=f"➕️ Add {BOT_NAME} to your group ➕️", url=f"t.me/{BOT_USERNAME}?startgroup=true"
         ),
     ],
 ]
 
+buttons = [
 
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
@@ -404,6 +409,27 @@ def prime_about_callback(update, context):
                 ]
             ),
         )
+        
+    elif query.data == "prime_music":
+        query.message.edit_text(
+            text="*๏Perintah Bot Music+Streaming*"
+            "\nKlik di bawah ini untuk lebih jelas perintah Bot Music+Streaming.",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="CD Music", url="https://t.me/WikiTapiChannel/138"),
+                    InlineKeyboardButton(text="CD Dev", url="https://t.me/WikiTapiChannel/139"),
+                    InlineKeyboardButton(text="CD Stream", url="https://t.me/WikiTapiChannel/140"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Go Back", callback_data="Wiki_"),
+                 ]
+                ]
+            ),
+        )
+        
     elif query.data == "prime_back":
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
