@@ -419,7 +419,7 @@ def prime_about_callback(update, context):
                     InlineKeyboardButton(text="CD Stream", url="https://t.me/WikiTapiChannel/140"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="Wiki_"),
+                    InlineKeyboardButton(text="Go Back", callback_data="prime_"),
                  ]
                 ]
             ),
@@ -496,8 +496,7 @@ def prime_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Tonic", url="t.me/Bukan_guudlooking"),
-                    InlineKeyboardButton(text="x~b", url="t.me/Xbarok"),
+                    InlineKeyboardButton(text="Wiki W", url="t.me/terserah_wiki"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="prime_"),
