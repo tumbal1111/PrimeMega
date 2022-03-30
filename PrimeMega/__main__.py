@@ -101,7 +101,8 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
-        InlineKeyboardButton(text="Music Help", callback_data="Wiki_music"),
+        InlineKeyboardButton(text="About Wiki", callback_data="prime_"),
+        InlineKeyboardButton(text="Music Help", callback_data="prime_music"),
     ],
     [
         InlineKeyboardButton(
