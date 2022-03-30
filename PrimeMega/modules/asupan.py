@@ -28,7 +28,7 @@ async def _(event):
 
             async for asupan in ubot2.iter_messages(
 
-            "@WikiModeAsupan", filter=InputMessagesFilterVideo
+            "@desahcewe", filter=InputMessagesFilterVideo
 
             )
 
