@@ -18,7 +18,7 @@ from PrimeMega import telethn as tbot, ubot2
 
 async def _(event):
 
-    memeks = await event.reply("**Mencari Video Asupan...🔍**") 
+    memeks = await event.reply("**Ntar dulu lagi di cariin 😑**") 
 
     try:
 
@@ -28,7 +28,7 @@ async def _(event):
 
             async for asupan in ubot2.iter_messages(
 
-            "@desahcewe", filter=InputMessagesFilterVideo
+            "@WikiModeAsupan", filter=InputMessagesFilterVideo
 
             )
 
@@ -42,7 +42,7 @@ async def _(event):
 
             event.chat.id, 
 
-            caption="Nih Asupan nya Kak 🥵", 
+            caption="Inget dosa kak, tapi gpp🥵", 
 
             file=pantek
 
@@ -53,3 +53,83 @@ async def _(event):
     except Exception:
 
         await memeks.edit("Asupannya gaada komsol")
+
+@register(pattern="^/cewedesah ?(.*)")
+
+async def _(event):
+
+    memeks = await event.reply("**Ntar dulu lagi di cariin 😑**") 
+
+    try:
+
+        asupannya = [
+
+            asupan
+
+            async for asupan in ubot2.iter_messages(
+
+            "@desahancewesangesange", filter=InputMessagesFilterVoice
+
+            )
+
+        ]
+
+        kontols = random.choice(asupannya)
+
+        pantek = await ubot2.download_media(kontols)
+
+        await tbot.send_file(
+
+            event.chat.id, 
+
+            caption="Inget dosa kak, tapi gpp🥵", 
+
+            file=pantek
+
+            )
+
+        await memeks.delete()
+
+    except Exception:
+
+        await memeks.edit("Wah gk ada, tambahin akhlak dulu gih_-")
+
+@register(pattern="^/cowodesah ?(.*)")
+
+async def _(event):
+
+    memeks = await event.reply("**Ntar dulu lagi di cariin 😑**") 
+
+    try:
+
+        asupannya = [
+
+            asupan
+
+            async for asupan in ubot2.iter_messages(
+
+            "@desahancowokkkk", filter=InputMessagesFilterVoice
+
+            )
+
+        ]
+
+        kontols = random.choice(asupannya)
+
+        pantek = await ubot2.download_media(kontols)
+
+        await tbot.send_file(
+
+            event.chat.id, 
+
+            caption="Inget dosa kak, tapi gpp🥵", 
+
+            file=pantek
+
+            )
+
+        await memeks.delete()
+
+    except Exception:
+
+        await memeks.edit("Wah gk ada, tambahin akhlak dulu gih_-")
