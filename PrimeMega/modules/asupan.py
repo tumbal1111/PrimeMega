@@ -74,7 +74,7 @@ async def _(event):
 
         ]
 
-        kontols = random.choice(asupannya)
+        kontols = random.choice(desahcewe)
 
         pantek = await ubot2.download_media(kontols)
 
@@ -114,7 +114,7 @@ async def _(event):
 
         ]
 
-        kontols = random.choice(asupannya)
+        kontols = random.choice(desahcowo)
 
         pantek = await ubot2.download_media(kontols)
 
