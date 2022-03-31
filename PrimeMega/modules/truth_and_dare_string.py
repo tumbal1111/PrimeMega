@@ -80,7 +80,7 @@ DARE = (
     "Kirim tangkapan layar galeri Anda.",
     "Jadikan foto gebetanmu sebagai dpmu.",
     "Sarankan saya lebih berani.",
-    "Chat mantan bilang, masih jomblo ya?"
-    "Chat pacar bilang, ayang mau pap atas🥵"
-    "Chat pacar bilang, ayang mau di desahin🥵"
+    "Chat mantan bilang, masih jomblo ya?",
+    "Chat pacar bilang, ayang mau pap atas🥵",
+    "Chat pacar bilang, ayang mau di desahin🥵",
 )
